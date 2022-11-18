@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Courgette&family=Merriweather:wght@300&display=swap');
+:root{
+    --mainColor:#008080;
+    --black:black;
+    --white:white;
+    --box-shadow:rgb(185, 185, 185);
+
+}
+/* =====================================  start Header============================ */
+.headerheader{
+    background: var(--white);
+    width: 100%;
+    height: 30px;
+}
+.headerhead {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.headerhead .headerheaderLeft{
+    width: 50%;
+    display: flex;
+}
+.headerhead .headerheaderLeft div {
+    padding-left: 10px;
+}
+.headerhead .headerheaderRight{
+    width: 50%;
+    display: flex;
+    justify-content:flex-end;
+    text-align: right;
+}
+.headerhead .headerheaderRight div {
+    padding-left: 10px;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background: var(--mainColor);
+    box-shadow: 2px 2px 4px var(--box-shadow);
+}
+
+.header .headerTitle p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Courgette, Merriweather, Akshar;
+    color: var(--white);
+}
+
+.header .headerLink ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .headerLink ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+.header .headerLink ul li a {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.header .headerLink ul li a:hover {
+    width: 100%;
+    color: var(--box-shadow);
+}
+
+.header .headerLink ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--box-shadow);
+    bottom: -2px;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.header .headerLink ul li a:hover::after {
+    width: 100%;
+}
+
+
+.header .headerIconSignandCart ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .headerIconSignandCart ul li {
+    list-style-type: none;
+    padding: 0px 10px;
+
+}
+
+.header .headerIconSignandCart ul li a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.header .headerIconSignandCart ul li a:hover {
+    width: 100%;
+    color: var(--box-shadow);
+}
+.barsIcon{
+    color: var(--white);
+    font-size: 25PX;
+    display: none;
+}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .header .headerLink ul li a {
+        display: none;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: none;
+    }
+    .barsIcon{
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .header .headerLink ul li a {
+        display: none;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: none;
+    }
+    .barsIcon{
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .header .headerLink ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: none;
+    }
+    .barsIcon{
+        display: block;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header .headerLink ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .barsIcon{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header .headerLink ul li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .barsIcon{
+        display: none;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .header .headerLink ul li a {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .barsIcon{
+        display: none;
+    }
+}
+
+/* =====================================  end Header============================ */
+/*=============================== start  Register ========================= */
+.Register h2 {
+    text-align: center;
+    color: var(--mainColor);
+    padding: 30px;
+}
+
+.form_Register {
+    padding: 40px 20px 20px 20px;
+    width: 40%;
+    margin: auto;
+    line-height: 2;
+    border: 2px solid rgb(18, 18, 19);
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 1px 1px 5px rgb(19, 18, 18);
+
+}
+
+.form_Register .username,
+.form_Register .lastname,
+.form_Register .email,
+.form_Register .phone,
+.form_Register .password,
+.form_Register .confirm-password {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.form_Register .username label,
+.form_Register .lastname label,
+.form_Register .email label,
+.form_Register .phone label,
+.form_Register .password label,
+.form_Register .confirm-password label {
+    width: 30%;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form_Register .username input,
+.form_Register .lastname input,
+.form_Register .email input,
+.form_Register .phone input,
+.form_Register .password input,
+.form_Register .confirm-password input {
+    outline: none;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.form_Register input {
+    width: 70%;
+}
+
+.form_Register .Register-footer {
+
+    width: 100px;
+    margin: 20px auto;
+}
+
+.form_Register .Register-footer .btn {
+    width: 100px;
+    background: var(--mainColor);
+    color: var(--white);
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .form_Register {
+        width: 90%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .form_Register {
+        width: 80%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .form_Register {
+        width: 70%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .form_Register {
+        width: 60%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .form_Register {
+        width: 50%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .form_Register {
+        width: 40%;
+    }
+
+    .form_Register .username label,
+    .form_Register .lastname label,
+    .form_Register .email label,
+    .form_Register .phone label,
+    .form_Register .password label,
+    .form_Register .confirm-password label {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/*=============================== end Register ========================= */
+/*=============================== start login ========================= */
+.Login h2 {
+    text-align: center;
+    color: var(--mainColor);
+    padding: 30px;
+}
+
+.form_Login {
+    padding: 40px 20px 20px 20px;
+    width: 40%;
+    margin: auto;
+    line-height: 2;
+    border: 2px solid rgb(18, 18, 19);
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 1px 1px 5px rgb(19, 18, 18);
+
+}
+
+
+.form_Login .email,
+.form_Login .password {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.form_Login .email label,
+.form_Login .password label{
+    width: 30%;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form_Login .email input,
+.form_Login .password input{
+    outline: none;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.form_Login input {
+    width: 70%;
+}
+
+.form_Login .login-footer {
+
+    width: 100px;
+    margin: 20px auto;
+}
+
+.form_Login .login-footer .btn {
+    width: 100px;
+    background: var(--mainColor);
+    color: var(--white);
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .form_Login {
+        width: 90%;
+    }
+
+   
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .form_Login {
+        width: 80%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .form_Login {
+        width: 70%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .form_Login {
+        width: 60%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .form_Login {
+        width: 50%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .form_Login {
+        width: 40%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+/*=============================== end login ========================= */
+
+
+
+
+/* ==============================start Footer ======================== */
+.footer{
+    background: var(--mainColor);
+    color: var(--white);
+    margin-top: 30px;
+    padding: 40px 40px 10px;
+}
+
+.footer .footerTitle p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Courgette, Merriweather, Akshar;
+    color: var(--white);
+    text-align: center;
+}
+.footer .footer-body{
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--white);
+}
+
+
+.footer .Left .footerdisc p {
+   padding-top: 20px;
+   max-width: 300px;
+   text-align: center;
+   line-height: 1.3;
+}
+.footer .center{
+    
+    text-align: center;
+}
+.footer .center div a {
+    color: var(--white);
+    text-decoration: none;
+    line-height: 1.3;
+    font-size: 18px;
+}
+.footer .Right {
+    text-align: center;
+    line-height: 1.3;
+}
+.footer .Right a {
+    margin: 5px;
+    color: var(--white);
+}
+.footer .copyRights {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0px 0px ;
+}
+/* ===============================End footer=========================== */
