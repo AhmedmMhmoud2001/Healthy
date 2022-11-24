@@ -6,6 +6,9 @@
     --box-shadow:rgb(185, 185, 185);
 
 }
+body{
+    background: rgb(245, 245, 245);
+}
 /* =====================================  start Header============================ */
 .headerheader{
     background: var(--white);
@@ -49,8 +52,10 @@
     background: var(--mainColor);
     box-shadow: 2px 2px 4px var(--box-shadow);
 }
-
+/* .header .headerTitle{
+} */
 .header .headerTitle p {
+   
     font-size: 30px;
     font-weight: 700;
     font-family: Courgette, Merriweather, Akshar;
@@ -128,16 +133,27 @@
     color: var(--box-shadow);
 }
 .barsIcon{
+    width: 50%;
     color: var(--white);
     font-size: 25PX;
     display: none;
+    text-align: right;
 }
 
 /* Extra small devices (phones, 300px and down) */
 @media only screen and (max-width: 300px) {
+    .header {
+        justify-content: space-around;
+    }
     .header .headerLink ul li a {
         display: none;
     }
+     .header .headerTitle p {
+        width: 50%;
+        font-size: 22px;
+        font-weight: 500;
+    } 
+    
 
     .header .headerIconSignandCart ul li a {
         display: none;
@@ -149,6 +165,11 @@
 
 /* Small devices (portrait tablets and large phones, 300px and up) */
 @media only screen and (min-width: 300px) {
+    .header .headerTitle p {
+        width: 50%;
+        font-size: 25px;
+        font-weight: 600;
+    } 
     .header .headerLink ul li a {
         display: none;
     }
@@ -232,6 +253,41 @@
 }
 
 /* =====================================  end Header============================ */
+/* =====================================Start Products=========================== */
+.Products{
+    margin: 30px 100px;
+}
+.ProductsProduct {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.ProductsProduct .Product {
+    max-width: 350px;
+    padding: 10px;
+    margin: 15px 0px;
+    border-radius: 10px;
+    background: var(--white);
+    box-shadow: 2px 2px 2px var(--box-shadow);
+
+}
+.ProductsProduct .Product .productname {
+    text-align: center;
+}
+.ProductsProduct .Product span {
+    margin-left: 30px;
+    line-height: 1.5;
+    opacity: .5;
+    display: block;
+}
+.ProductsProduct .Product .productprice {
+    color: teal;
+    line-height: 1.5;
+    margin-left: 30px;
+}
+/* ===============================End Products=========================== */
 /*=============================== start  Register ========================= */
 .Register h2 {
     text-align: center;
@@ -247,6 +303,7 @@
     border: 2px solid rgb(18, 18, 19);
     border-radius: 25px 0px 25px 0px;
     box-shadow: 1px 1px 5px rgb(19, 18, 18);
+    background:var(--white);
 
 }
 
@@ -423,6 +480,7 @@
     border: 2px solid rgb(18, 18, 19);
     border-radius: 25px 0px 25px 0px;
     box-shadow: 1px 1px 5px rgb(19, 18, 18);
+    background:var(--white);
 
 }
 
