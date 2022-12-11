@@ -265,7 +265,7 @@ body{
 
 }
 .ProductsProduct .Product {
-    max-width: 350px;
+    max-width: 300px;
     padding: 10px;
     margin: 15px 0px;
     border-radius: 10px;
@@ -287,6 +287,70 @@ body{
     line-height: 1.5;
     margin-left: 30px;
 }
+.ProductsProduct .Product .buyNow {
+    border-radius: 5px;
+    background: teal;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 40%;
+}
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .Products{
+        margin: 30px 10px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .Products{
+        margin: 30px 20px;
+    }
+    
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .Products{
+        margin: 30px 40px;
+    }
+    
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .Products{
+        margin: 30px 50px;
+    }
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .Products{
+        margin: 30px 60px;
+    }
+    
+}
+@media only screen and (min-width: 1040px) {
+    .Products{
+        margin: 30px 70px;
+    }
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Products{
+        margin: 30px 10px;
+    }
+    
+}
+
 /* ===============================End Products=========================== */
 /*=============================== start  Register ========================= */
 .Register h2 {

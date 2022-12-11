@@ -16,6 +16,7 @@ export const Products = () => {
         <div className='ProductsProduct'>
         {data.products.map((product) => (
                 <div className='Product' key={product.id}>
+                  <Link to={`/Product/${product.id}`}>
                   <div>
                     <img src={product.image} width="100%" alt={product.name}/>
                   </div>
@@ -28,6 +29,8 @@ export const Products = () => {
                       <Link to={`/Cart/${product.id}`} className='buyNow'>Buy Now</Link>
                     </div>
                   </div>
+                  </Link>
+                  
                 </div>
           ))}
         </div>
