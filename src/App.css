@@ -265,7 +265,7 @@ body{
 
 }
 .ProductsProduct .Product {
-    max-width: 300px;
+    width: 270px;
     padding: 10px;
     margin: 15px 0px;
     border-radius: 10px;
@@ -273,8 +273,17 @@ body{
     box-shadow: 2px 2px 2px var(--box-shadow);
 
 }
+.product-img {
+    height: 44vh;
+}
+.ProductsProduct img {
+    max-height: 40vh;
+}
 .ProductsProduct .Product .productname {
     text-align: center;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 .ProductsProduct .Product span {
     margin-left: 30px;
@@ -352,6 +361,147 @@ body{
 }
 
 /* ===============================End Products=========================== */
+
+
+
+
+/* =============================start product ========================== */
+.showproduct {
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.showproduct-img {
+    max-width: 450px;
+}
+.showproduct-img img {
+    width: 100%;
+    height: 60vh;
+}
+.showproduct-info {
+    margin-left: 30px;
+}
+.showproduct-info .category-name {
+    padding:5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+    opacity: .5;
+}
+.showproduct-info .product_name  {
+    max-width: 500px;
+    padding:5px;
+   font-size: 40px;
+   color: #000;
+   font-weight: 500;
+   
+}
+.showproduct-info .descriptions {
+    max-width: 500px;
+    padding:5px;
+    opacity: .5;
+}
+.showproduct-info .product_price{
+
+    padding:5px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--mainColor);
+}
+.showproduct-button input {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: var(--mainColor);
+    color: var(--white);
+    font-size: 17px;
+
+}
+
+/* =============================end product ============================= */
+
+/*=============================== start About ========================= */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.main {
+    width: 80%;
+    line-height: 1.5;
+}
+
+.about_us, .contact_us {text-decoration: underline;}
+
+.about_ul {
+    margin-left: 50px;
+}
+
+.hotline {color: red;}
+
+.hotline span {color: black;}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*=============================== end About ========================= */
+
+
+
+
+
+
 /*=============================== start  Register ========================= */
 .Register h2 {
     text-align: center;
