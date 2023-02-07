@@ -1,0 +1,72 @@
+/*=============================== start About ========================= */
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.main {
+    width: 80%;
+    line-height: 1.5;
+}
+
+.about_us, .contact_us {text-decoration: underline;}
+
+.about_ul {
+    margin-left: 50px;
+}
+
+.hotline {color: red;}
+
+.hotline span {color: black;}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+/*=============================== end About ========================= */

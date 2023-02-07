@@ -1,0 +1,144 @@
+/*=============================== start login ========================= */
+.Login h2 {
+    text-align: center;
+    color: var(--mainColor);
+    padding: 30px;
+}
+
+.form_Login {
+    padding: 40px 20px 20px 20px;
+    width: 40%;
+    margin: auto;
+    line-height: 2;
+    border: 2px solid rgb(18, 18, 19);
+    border-radius: 25px 0px 25px 0px;
+    box-shadow: 1px 1px 5px rgb(19, 18, 18);
+    background:var(--white);
+
+}
+
+
+.form_Login .email,
+.form_Login .password {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5px;
+}
+
+.form_Login .email label,
+.form_Login .password label{
+    width: 30%;
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.form_Login .email input,
+.form_Login .password input{
+    outline: none;
+    padding-left: 10px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.form_Login input {
+    width: 70%;
+}
+
+.form_Login .login-footer {
+
+    width: 100px;
+    margin: 20px auto;
+}
+
+.form_Login .login-footer .btn {
+    width: 100px;
+    background: var(--mainColor);
+    color: var(--white);
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .form_Login {
+        width: 90%;
+    }
+
+   
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .form_Login {
+        width: 80%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .form_Login {
+        width: 70%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .form_Login {
+        width: 60%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .form_Login {
+        width: 50%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .form_Login {
+        width: 40%;
+    }
+
+    .form_Login .email label,
+    .form_Login .password label{
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+/*=============================== end login ========================= */
