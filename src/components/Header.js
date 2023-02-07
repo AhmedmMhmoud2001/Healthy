@@ -3,7 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus,faSignIn,faUserPlus,faPhone,faEnvelope,faBars} from '@fortawesome/free-solid-svg-icons'
 import { faInstagram ,faTwitter ,faFacebook ,faTelegram} from '@fortawesome/free-brands-svg-icons'
 import {Link} from "react-router-dom";
+import "./header.css"
+// src/pages/Home.js
+import { useSelector } from 'react-redux';
 const Header = () => {
+  // src/pages/Home.js
+const cart = useSelector((state) => state.cart)
+
+const getTotalQuantity = () => {
+  let total = 0
+  cart.forEach(item => {
+    total += item.quantity
+  })
+  return total
+}
   return (
     <>
     <div className='headerhead'>
@@ -47,10 +60,10 @@ const Header = () => {
       </div>
       <div className='headerIconSignandCart'>
         <ul>
-            <li>
+            <li className='cartcounter'>
             <Link to="/Cart">
               <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
-              Cart
+              Cart  <p className='TotalQuantity'>{getTotalQuantity() || 0}</p>
               </Link>
             </li>
             <li>

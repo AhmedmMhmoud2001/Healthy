@@ -1,0 +1,152 @@
+/*  start contact */
+.contact{ 
+    font-family:sans-serif; 
+} 
+.header-contact{ 
+    margin: 30px auto; 
+    width: 50%; 
+    text-align: center; 
+    color: #777; 
+} 
+.header-contact h2{ 
+    color: black; 
+} 
+.header-contact .line{ 
+    border-bottom: 2px solid rgb(141, 136, 136); 
+    width: 12%; 
+    margin: 10px auto; 
+    position: relative; 
+} 
+.containier{ 
+    width: 80%; 
+    margin: 50px auto; 
+    display: flex; 
+    justify-content: space-between; 
+} 
+.containier .content{ 
+    width: 70%; 
+} 
+.form-contact input{ 
+    width: 100%; 
+    height: 40px; 
+    margin-bottom: 30px; 
+    outline: none; 
+} 
+.form-contact .message-contact{ 
+    width: 100%; 
+    height: 150px; 
+    outline: none; 
+} 
+.containier .info{ 
+    width: 38%; 
+    padding-left: 15px; 
+} 
+.info .touch p{ 
+    color: #777; 
+    margin: 20px 0 40px 0; 
+} 
+.info .where-we h4{ 
+    margin-bottom: 20px; 
+} 
+.info .where-we p{ 
+    color: #777; 
+    line-height: 23px; 
+} 
+@media (max-width:700px) { 
+    .containier{ 
+        display: block; 
+    } 
+    .containier .content{ 
+        width: 100%; 
+    } 
+    .containier .info{ 
+        width: 100%; 
+        margin: 30px 0 0 0; 
+        text-align: center; 
+    } 
+} 
+.btn-contact{ 
+    display: block; 
+    margin: 20px auto; 
+    border: 0px; 
+    background-color: #83d3d3; 
+    padding: 20px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+} 
+.btn-contact:hover{ 
+    background-color: #008080; 
+    transition: 0.25s; 
+    color: white; 
+} 
+.containier-map{ 
+    width: 80%; 
+    margin: 20px auto; 
+} 
+.contact-us{ 
+    display: flex; 
+    justify-content: space-between; 
+} 
+.contact-us .map-contact{ 
+    width: 65%; 
+} 
+.contact-us .how-contact{ 
+    width: 34%; 
+    padding-left: 5px; 
+} 
+.how-contact div{ 
+    margin: 0 10px 60px 0; 
+    border: 2px solid rgb(46, 11, 11); 
+    width: 100%; 
+    text-align: center; 
+    padding: 30px 0; 
+    position: relative; 
+    transition: 1s; 
+    cursor: pointer; 
+} 
+.how-contact div:hover{ 
+    color: white; 
+    transform: scale(1.07,1.1); 
+} 
+.how-contact div p{ 
+    color: #777; 
+    line-height: 23px; 
+} 
+.how-contact div:hover p{ 
+    color: white; 
+} 
+.how-contact div::after{ 
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    background-color: rgb(43, 37, 37); 
+    opacity: 0.7; 
+    transition: 1s; 
+    z-index: -1; 
+} 
+ 
+.how-contact div:hover::after{ 
+    width: 100%; 
+    height: 100%; 
+} 
+@media (max-width:800px) { 
+    .contact-us{ 
+        display: block; 
+    } 
+    .contact-us .how-contact{ 
+        width: 100%; 
+        margin-top: 40px; 
+    } 
+    .contact-us .map-contact{ 
+        width: 100%; 
+    } 
+    .how-contact div{ 
+        margin-bottom: 40px; 
+    } 
+} 
+.mapouter{position:relative;text-align:right;height:500px;width:100%;} 
+.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;}
+/* end contact */

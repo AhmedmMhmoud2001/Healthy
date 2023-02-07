@@ -2,6 +2,7 @@ import React from 'react'
 // import data from '../data'
 import {Link} from "react-router-dom";
 // import Product from './Product';
+import "./products.css"
 import {useState, useEffect} from "react"
 
 export const Products = ({cat,filter,sort}) => {
@@ -74,8 +75,7 @@ export const Products = ({cat,filter,sort}) => {
                     {/* <span>Rating {product.rating}</span> */}
                     <h2 className='productprice'>{product.price} LE</h2>
                     <div>
-                      <Link to={`/Cart/${product.id}`} className='buyNow'>Buy Now</Link>
-                      
+                      <Link to={`/Products/${product.id}`} className='buyNow'>More</Link>
                     </div>
                   </div>
                   
