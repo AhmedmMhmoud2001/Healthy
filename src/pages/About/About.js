@@ -64,6 +64,6 @@ export default function About() {
           <p>We undertake to develop the pharmacy concept in Egypt and provide suitable services for our customers. </p>
           </div>
           </div>
-          </div>
+    </div>
   )
 }

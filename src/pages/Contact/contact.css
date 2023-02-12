@@ -24,7 +24,7 @@
     justify-content: space-between; 
 } 
 .containier .content{ 
-    width: 70%; 
+    width: 100%; 
 } 
 .form-contact input{ 
     width: 100%; 

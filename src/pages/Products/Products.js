@@ -12,10 +12,11 @@ export const Products = ({cat,filter,sort}) => {
       const [data, setData] = useState([]);
     
       useEffect(() => {
-        const url = `https://fakestoreapi.com/products`;
+        const url = `https://dummyjson.com/products`;
         // https://fakestoreapi.com/products
         fetch(url)
           .then((response) => response.json())
+          // .then(console.log)
           .then((json) => setData(json))
           .catch((error) => console.log("error in api"));
       }, []);
@@ -24,7 +25,8 @@ export const Products = ({cat,filter,sort}) => {
         if (data.length !== 0) {
           setIsLoading(false);
         }
-        // console.log(data)
+        const products =data.products;
+        console.log(products)
         
       }, [data]);
   return (
@@ -61,12 +63,12 @@ export const Products = ({cat,filter,sort}) => {
             loading ...
           </h1>
         ) : (
-          data.map((product , cat ) => (
+          data.products.map((product , cat ) => (
               // <Product product ={product} key={product.id}/>
               <div className='Product' product ={product} key={product.id}>
                   <div className='product-img'>
                   <Link to={`/Products/${product.id}`}>
-                  <img src={product.image} width="100%" alt={product.title}/>
+                  <img src={product.images[0]} width="100%" alt={product.title}/>
                   </Link>
                   </div>
                   <div>

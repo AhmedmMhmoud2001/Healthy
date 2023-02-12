@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useParams } from "react-router-dom";
 import { useState, useEffect} from "react";
 import { useDispatch } from 'react-redux';
-import {addToCart} from '../redux/cartSlice';
+import {addToCart} from '../../redux/cartSlice';
 import "./product.css"
 export const Product = () => {
   // src/components/Item.js
@@ -13,7 +13,7 @@ const dispatch = useDispatch()
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = `https://fakestoreapi.com/products/${Prodact.id}`;
+    const url = `https://dummyjson.com/products/${Prodact.id}`;
     fetch(url)
       .then((response) => response.json())
       .then((json) => setData(json))
@@ -23,15 +23,12 @@ const dispatch = useDispatch()
     if (data.length !== 0) {
       setIsLoading(false);
     }
-    // console.log(data);
 
   }, [data]);
   let id=data.id;
   let title=data.title;
   let price=data.price;
-  let image=data.image;
-  
-
+  let image=data.images;
   return (
     
       <div>
@@ -42,7 +39,7 @@ const dispatch = useDispatch()
     ) : (
         <div className='showproduct'>
           <div className="showproduct-img">
-            <img src={data.image} alt="" />
+            <img src={data.images[0]} alt="" />
         </div>
         <div className="showproduct-info">
                     <p className='category-name'>{data.category}</p>

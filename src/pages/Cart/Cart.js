@@ -1,14 +1,7 @@
-// import React from 'react'
-// // // src/pages/Cart.js
-// // import { useSelector } from 'react-redux'
-// // src/components/Total.js
-// import {useSelector} from 'react-redux'
-// import { incrementQuantity, decrementQuantity, removeItem} from '../redux/cartSlice'
-// import { useDispatch } from 'react-redux'
+
 import './cart.css'
-import Total from './Total'
-import CartItem from './CartItem'
-// src/pages/Cart.js
+import Total from '../../components/Total/Total'
+import CartItem from '../../components/CartItem/CartItem'
 import { useSelector } from 'react-redux'
 
 export default function Cart() {
@@ -24,7 +17,7 @@ export default function Cart() {
           <CartItem
             key={item.id}
             id={item.id}
-            image={item.image}
+            image={item.images}
             title={item.title}
             price={item.price} 
             quantity={item.quantity}
@@ -35,6 +28,9 @@ export default function Cart() {
 
       <div className="cart__right">
         <Total/>
+        <div>
+          
+        </div>
       </div>
 
     </div>

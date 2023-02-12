@@ -1,0 +1,49 @@
+.Articles {
+    width: 85%;
+    margin: 80px auto;
+
+}
+
+.Articles-title {
+    text-align: center;
+    margin: 20px;
+    color: var(--mainColor);
+    
+}
+.Articles-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: space-around;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.Articles-info {
+    max-width: 500px;
+}
+.Articles-info h2 {
+    color: var(--mainColor);
+    margin: 15px 0px;
+}
+.Articles-info p{
+    opacity:.7;
+}
+.Articles-info button{
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    background:  var(--mainColor);
+    color: #fff;
+    font-size: 20px;
+    padding: 7px;
+}
+.Articles-img {
+    text-align: center;
+}
+.Articles-img img {
+    width: 200px;
+}
