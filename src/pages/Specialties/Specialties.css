@@ -1,0 +1,29 @@
+.Specialties {
+    width: 85%;
+    margin: 100px auto;
+}
+.Specialties-title {
+    color: var(--mainColor);
+    text-align: center;
+    font-size: 35px;
+}
+.Specialties-all-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+.Specialties-card {
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border: 1px solid #c2bcbc;
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.Specialties-card img {
+    width: 40%;
+}

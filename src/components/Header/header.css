@@ -1,0 +1,319 @@
+/* =====================================  start Header============================ */
+.headerheaderRight{
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+}
+ .headerheaderRight div {
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius: 50%;
+    background: #7e7474;
+    transition: all ease .5s;
+
+}
+.headerheaderRight div:hover{
+    transform: scale(1.2);
+}
+.headerheaderRight div a {
+    color: #fff;
+    
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background: var(--mainColor);
+    box-shadow: 2px 2px 4px var(--box-shadow);
+}
+/* .header .headerTitle{
+} */
+.header .headerTitle p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Courgette, Merriweather, Akshar;
+    color: var(--white);
+}
+
+.header .headerIconSignandCart ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .headerIconSignandCart ul li {
+    list-style-type: none;
+    padding: 0px 15px;
+
+}
+
+.headerIconSignandCart ul li a {
+    color: var(--white);
+    text-decoration: none;
+    position: relative;
+}
+.iconheader{
+    color: var(--white);
+    font-size: 19px;
+}
+.iconheader:hover{
+    color: var(--box-shadow);
+}
+.TotalQuantity ,.TotalMessage,.TotalNotifications {
+    position: absolute;
+    padding: 2px 7px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    top: -22px;
+    left: -12px;
+}
+
+.header .headerIconSignandCart ul li a:hover {
+    width: 100%;
+    color: var(--box-shadow);
+}
+.barsIcon{
+    width: 50%;
+    color: var(--white);
+    font-size: 25PX;
+    display: none;
+    position: relative;
+    text-align: right;
+}
+.slidbar {
+    position: absolute;
+    z-index: 10;
+    background: #fff;
+    right: 10px;
+    display: none;
+}
+.slidbar ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 40vh;
+    width: 160px;
+    text-align: left;
+}
+.slidbar ul li {
+    list-style-type: none;
+}
+.slidbar ul li a {
+    color: var(--mainColor);
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+.headerLink {
+    background: #fff;
+    color: var(--mainColor) !important;
+}
+ .headerLink ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    margin:auto;
+
+}
+
+ .headerLink ul li {
+    list-style-type: none;
+}
+
+.headerLink ul li a {
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.headerLink ul li a:hover {
+    width: 100%;
+    text-shadow: 0px 2px 2px var(--mainColor);
+}
+
+.headerLink ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--box-shadow);
+    bottom: -2px;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.headerLink ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+/* Extra small devices (phones, 300px and down) */
+@media only screen and (max-width: 300px) {
+    .headerheaderRight{
+        left: 10px;
+        bottom: 10px;
+    }
+    .header {
+        justify-content: space-around;
+    }
+     .header .headerTitle p {
+        width: 50%;
+        font-size: 22px;
+        font-weight: 500;
+    } 
+    
+
+    .header .headerIconSignandCart ul li a {
+        display: none;
+    }
+    .barsIcon{
+        display: block;
+    }
+    .headerLink ul {
+        width: 100%;
+    }
+    .headerLink ul li a {
+        font-size: 12px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 300px and up) */
+@media only screen and (min-width: 300px) {
+    .headerheaderRight{
+        left: 10px;
+        bottom: 10px;
+    }
+    .header .headerTitle p {
+        width: 50%;
+        font-size: 25px;
+        font-weight: 600;
+    } 
+    .header .headerIconSignandCart ul li a {
+        display: none;
+    }
+    .barsIcon{
+        display: block;
+    }
+    .headerLink ul {
+        width: 100%;
+    }
+    .headerLink ul li a {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .headerheaderRight{
+        left: 20px;
+        bottom: 20px;
+    }
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .barsIcon{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .headerheaderRight{
+        left: 20px;
+        bottom: 20px;
+    }
+    .header .headerLink ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .barsIcon{
+        display: none;
+    }
+    .headerLink ul {
+        width: 90%;
+    }
+    .headerLink ul li a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .barsIcon{
+        display: none;
+    }
+    .headerLink ul {
+        width: 80%;
+    }
+    .headerLink ul li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .header .headerIconSignandCart ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .barsIcon{
+        display: none;
+    }
+    .headerLink ul {
+        width: 80%;
+    }
+    .headerLink ul li a {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+/* =====================================  end Header============================ */
