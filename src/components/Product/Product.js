@@ -13,7 +13,7 @@ const dispatch = useDispatch()
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   useEffect(() => {
-    const url = `https://dummyjson.com/products/${Prodact.id}`;
+    const url = `https://fakestoreapi.com/products/${Prodact.id}`;
     fetch(url)
       .then((response) => response.json())
       .then((json) => setData(json))
@@ -28,7 +28,7 @@ const dispatch = useDispatch()
   let id=data.id;
   let title=data.title;
   let price=data.price;
-  let image=data.images;
+  let image=data.image;
   return (
     
       <div>
@@ -39,7 +39,7 @@ const dispatch = useDispatch()
     ) : (
         <div className='showproduct'>
           <div className="showproduct-img">
-            <img src={data.images[0]} alt="" />
+            <img src={data.image} alt="" />
         </div>
         <div className="showproduct-info">
                     <p className='category-name'>{data.category}</p>
