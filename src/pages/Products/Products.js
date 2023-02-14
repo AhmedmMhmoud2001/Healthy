@@ -12,8 +12,9 @@ export const Products = ({cat,filter,sort}) => {
       const [data, setData] = useState([]);
     
       useEffect(() => {
-        const url = `https://dummyjson.com/products`;
+        const url = `https://fakestoreapi.com/products`;
         // https://fakestoreapi.com/products
+        // https://dummyjson.com/products
         fetch(url)
           .then((response) => response.json())
           // .then(console.log)
@@ -63,12 +64,12 @@ export const Products = ({cat,filter,sort}) => {
             loading ...
           </h1>
         ) : (
-          data.products.map((product , cat ) => (
+          data.map((product , cat ) => (
               // <Product product ={product} key={product.id}/>
               <div className='Product' product ={product} key={product.id}>
                   <div className='product-img'>
                   <Link to={`/Products/${product.id}`}>
-                  <img src={product.images[0]} width="100%" alt={product.title}/>
+                  <img src={product.image} width="100%" alt={product.title}/>
                   </Link>
                   </div>
                   <div>

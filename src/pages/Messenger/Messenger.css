@@ -1,0 +1,78 @@
+.Messenger-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.Messenger-page-left-live-chat{
+    height: 75vh;
+    width: 75%;
+}
+.live-chat {
+    width: 80%;
+    margin:2vh auto;
+    background: #fff;
+    height: 71vh;
+    
+}
+.live-chat h2 {
+    color: var(--mainColor);
+    text-align: center;
+    height: 11vh;
+}
+.live-chat-message{
+    height: 55vh;
+    overflow-y: scroll;
+
+}
+.sender {
+    height: 5vh;
+    width: 100%;
+    margin: auto;
+}
+.sender input {
+  width: 70%;
+  height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    background: #e6e3e3;
+    color: var(--mainColor);
+    padding-left: 30px;
+}
+.sender button{
+    width: 30%;
+    height: 100%;
+    border: none;
+    background:var(--mainColor);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+.Messenger-page-right{
+    width: 25%;
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.img-name-clint-or-doc {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.img-name-clint-or-doc img {
+    width: 50px;
+    border-radius: 50px;
+    background: #fff;
+    margin: 10px;
+}
+.img-name-clint-or-doc p {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--mainColor);
+}
