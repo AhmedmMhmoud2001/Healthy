@@ -4,7 +4,6 @@ import { incrementQuantity, decrementQuantity, removeItem} from '../../redux/car
 import { useDispatch } from 'react-redux'
 function CartItem({id, image, title, price, quantity=0}) {
   const dispatch = useDispatch()
-  console.log(image)
   return (
     <div className="cartItem">
       <img className="cartItem__image" src={image} alt='item'/>

@@ -6,13 +6,13 @@ import { useSelector } from 'react-redux'
 
 export default function Cart() {
   const cart = useSelector((state) => state.cart)
+  
   return (
-   
     <div className="cart">
-
     <div className="cart__left">
       <div>
         <h3>Shopping Cart</h3>
+        
         {cart.map((item) => (
           <CartItem
             key={item.id}

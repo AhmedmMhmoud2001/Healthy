@@ -30,7 +30,6 @@ export const Register = () => {
     const  Form_Register=(e)=>{
         e.preventDefault();
         alert(JSON.stringify(formregister, null, 2));
-       
         // if(formregister.firstname.length<6){
         //     console.log("first name is not valide")
            
