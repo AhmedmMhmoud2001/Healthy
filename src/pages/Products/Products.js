@@ -10,10 +10,13 @@ export const Products = ({cat,filter,sort}) => {
       // console.log(cat)
       const [isLoading, setIsLoading] = useState(true);
       const [data, setData] = useState([]);
-    
+      let more_less="More";
+    const more_less_products = ()=>{
+       more_less="Moreeeeeeeee";
+    }
       useEffect(() => {
         const url = `https://fakestoreapi.com/products`;
-        // https://fakestoreapi.com/products
+        // https://fakestoreapi.com/products=========/Products
         // https://dummyjson.com/products
         fetch(url)
           .then((response) => response.json())
@@ -21,50 +24,57 @@ export const Products = ({cat,filter,sort}) => {
           .then((json) => setData(json))
           .catch((error) => console.log("error in api"));
       }, []);
-    
        useEffect(() => {
         if (data.length !== 0) {
           setIsLoading(false);
         }
-        const products =data.products;
-        console.log(products)
-        
       }, [data]);
+      const limetproduct =[]
+      
+     
+      for (let i=0 ;i<16;i++){
+        
+        limetproduct.push(data[i])
+      }
+      console.log(limetproduct)
   return (
     <div className='Products'>
-      <div  className='Productsfitter'>
 
-      </div> 
       <div>
-        <div>
+        <div className='tit-Products'>
           <h2>Products</h2>
         </div>
+        <div className='filter-products'>
+              <div>
+                    <button>all</button>
+             </div>
+             <div>
+                   <button>
+                   men's clothing
+                   </button>
+             </div>
+             <div>
+                   <button>
+                   jewelery
+                   </button>
+             </div>
+             <div>
+                   <button>
+                   electronics
+                   </button>
+             </div>
+             <div>
+                    <button>women's clothing</button>
+             </div>
+             
+        </div>
         <div className='ProductsProduct'>
-        {/* {data.products.map((product) => (
-                <div className='Product' key={product.id}>
-                  <Link to={`/Product/${product.id}`}>
-                  <div>
-                    <img src={product.image} width="100%" alt={product.name}/>
-                  </div>
-                  <div>
-                    <h2 className='productname'>{product.name}</h2>
-                    <span>{product.category}</span>
-                    <span>Rating {product.rating}</span>
-                    <h2 className='productprice'>{product.price} LE</h2>
-                    <div>
-                      <Link to={`/Cart/${product.id}`} className='buyNow'>Buy Now</Link>
-                    </div>
-                  </div>
-                  </Link>
-                  
-                </div>
-          ))} */}
            {isLoading ? (
           <h1>
             loading ...
           </h1>
         ) : (
-          data.map((product , cat ) => (
+          limetproduct.map((product , cat ) => (
               // <Product product ={product} key={product.id}/>
               <div className='Product' product ={product} key={product.id}>
                   <div className='product-img'>
@@ -85,6 +95,9 @@ export const Products = ({cat,filter,sort}) => {
                 </div>
           ))
         )}
+        <div>
+          
+        </div>
         </div>
       </div>    
     </div>

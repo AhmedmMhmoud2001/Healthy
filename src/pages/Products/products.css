@@ -1,28 +1,70 @@
 /* =====================================Start Products=========================== */
-.Products{
-    margin: 30px 100px;
+.tit-Products {
+    margin: 30px;
+    text-align: center;
+    color: var(--mainColor);
+    font-size: 40px;
 }
+
+.filter-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.filter-products div button {
+    background: #fff;
+    padding: 5px 10px;
+    margin: 0px 10px 30px;
+    border-radius: 5px;
+    border: 1px solid var(--box-shadow);
+}
+.filter-products div button:hover{
+    color: #fff;
+    background:var(--mainColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .ProductsProduct {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    
 
 }
 .ProductsProduct .Product {
     width: 270px;
     padding: 10px;
-    margin: 15px 0px;
+    margin:10px;
     border-radius: 10px;
     background: var(--white);
     box-shadow: 2px 2px 2px var(--box-shadow);
-
+    
 }
 .product-img {
-    height: 44vh;
+    height: 40vh;
+    text-align: center;
 }
 .ProductsProduct img {
-    max-height: 40vh;
+    height: 38vh;
+    width: 80%;
+    
 }
 .ProductsProduct .Product .productname {
     text-align: center;
@@ -37,14 +79,14 @@
     display: block;
 }
 .ProductsProduct .Product .productprice {
-    color: teal;
+    color: #ff0000;
     line-height: 1.5;
     margin-left: 30px;
 }
 .ProductsProduct .Product .buyNow {
     border-radius: 5px;
-    background: teal;
-    padding: 5px;
+    background: var(--mainColor);
+    padding: 7px 14px;
     color: white;
     text-decoration: none;
     text-align: center;

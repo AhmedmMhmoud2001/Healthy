@@ -1,73 +1,46 @@
 /*=============================== start About ========================= */
-
-.container {
+.container h1{
+    font-size: 40px;
+    color: var(--mainColor) ;
+    text-align: center;
+    margin: 50px;
+}
+.Vision ,.Values  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
     width: 80%;
-    margin: auto;
-    padding: 30px 0;
+    margin: 10px auto;
 }
-
-.main {
+.Mission  {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
     width: 80%;
-    line-height: 1.5;
+    margin:10px auto;
+    border-radius: 5px;
 }
-
-.about_us, .contact_us {text-decoration: underline;}
-
-.about_ul {
-    margin-left: 50px;
+.Vision  img ,.Mission img ,.Values img{
+    width: 400px;
+    margin: 20px;
+    border-radius: 5px;
 }
+.Vision  div  ,.Mission div ,.Values div{
+    width: 400px;
+    margin: 20px;
 
-.hotline {color: red;}
-
-.hotline span {color: black;}
-
-/* Extra small devices (phones, 300px and down) */
-@media only screen and (max-width: 300px) {
-    .container {
-        width: 80%;
-        margin: auto;
-    }
 }
-
-/* Small devices (portrait tablets and large phones, 300px and up) */
-@media only screen and (min-width: 300px) {
-    .container {
-        width: 80%;
-        margin: auto;
-    }
+.Vision  div  h2,.Mission div h2,.Values div h2{
+    color: var(--mainColor);
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .container {
-        width: 80%;
-        margin: auto;
-    }
+.Vision  div  p,.Mission div p,.Values div p{
+    opacity: .5;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-}
-
-/*=============================== end About ========================= */
-

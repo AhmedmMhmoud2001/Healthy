@@ -9,7 +9,7 @@ export const Product = () => {
   // src/components/Item.js
 const dispatch = useDispatch()
   const Prodact = useParams();
-  // console.log(Prodact.id);
+  //  console.log(Prodact.id);
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   useEffect(() => {

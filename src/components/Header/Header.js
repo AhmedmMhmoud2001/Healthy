@@ -29,12 +29,12 @@ const getTotalQuantity = () => {
   return (
     <>
       <div className='headerheaderRight'>
-        <div> <Link to="">< FontAwesomeIcon icon={faPhone}/></Link></div>
-        <div> <Link to="">< FontAwesomeIcon icon={faEnvelope}/></Link></div>
-        <div> <Link to="">< FontAwesomeIcon icon={faTwitter}/></Link></div>
-        <div> <Link to="">< FontAwesomeIcon icon={faTelegram}/></Link></div>
-        <div> <Link to="">< FontAwesomeIcon icon={faInstagram}/></Link></div>
-        <div> <Link to="">< FontAwesomeIcon icon={faFacebook}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faPhone}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faEnvelope}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faTwitter}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faTelegram}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faInstagram}/></Link></div>
+        <div> <Link to="#">< FontAwesomeIcon icon={faFacebook}/></Link></div>
       </div>
     <div className='header'>
       

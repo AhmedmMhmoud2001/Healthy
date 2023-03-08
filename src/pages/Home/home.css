@@ -1,0 +1,41 @@
+.home-main {
+    background: #480475;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding:40px 0px;
+}
+.home-main-left{
+    max-width: 600px;
+    position:relative;
+}
+.home-main-left img{
+    width: 100%;
+}
+.home-main-left .info {
+   position: absolute;
+   left: 50%;
+   top: 40%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+
+}
+.home-main-left .info h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.home-main-left .info p {
+    margin: 30px 0px;
+    color: #fff;
+    opacity: .5;
+}
+.home-main-right {
+    width: 300px ;
+}
+.home-main-right img {
+    width: 100%;
+    z-index: 10;
+}

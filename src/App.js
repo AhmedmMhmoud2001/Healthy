@@ -4,9 +4,11 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+
 // ============= components ==================
 import Header from './components/Header/Header';
 import { Product } from './components/Product/Product';
+import  Article from './components/Article/Article';
 import { Footer } from './components/Footer/Footer';
 // =============pages============
 import Home from './pages/Home/Home';
@@ -31,6 +33,7 @@ function App() {
           <Route path="/Products/:id" element={<Product/>}/>
           <Route path="/Specialties" element={<Specialties/>}/>
           <Route path="/Articles" element={<Articles/>}/>
+          <Route path="/Articles/:id" element={<Article/>}/>
           <Route path="/Messenger" element={<Messenger/>}/>
           <Route path="/About" element={<About/>}/>
           <Route path="/Cart" element={<Cart/>}/>
