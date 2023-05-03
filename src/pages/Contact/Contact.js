@@ -19,7 +19,7 @@ const  Form_Contact=(e)=>{
     alert(JSON.stringify(formcontact, null, 2));
 }
   return (
-    <div className='contact'> 
+    <div className='contact container'> 
  
          <div className='header-contact'> 
          <h2>Contact Us</h2> 
@@ -30,10 +30,10 @@ const  Form_Contact=(e)=>{
         <div className='containier-map'> 
         <div className='contact-us'> 
          <div className='map-contact'> 
-          <div class="mapouter"> 
-            <div class="gmap_canvas"> 
+          <div className="mapouter"> 
+            <div className="gmap_canvas"> 
             <iframe title="uniqueTitle"  width="100%" height="510" id="gmap_canvas" src="https://maps.google.com/maps?q=calif 
-            ornia&t=&z=10&ie=UTF8&iwloc=&output=embed"frameborder="0" scrolling="no" marginheight="0" marginwidth="0"/> 
+            ornia&t=&z=10&ie=UTF8&iwloc=&output=embed"frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"/> 
             <a href="https://2yu.co">2yu</a><br></br> 
             <a href="https://embedgooglemap.2yu.co">html embed google map</a></div></div> 
         </div> 
@@ -54,8 +54,7 @@ const  Form_Contact=(e)=>{
         </div> 
          </div> 
         </div> 
-
-         <div className='containier'> 
+         <div className=''> 
           <div className='content'> 
             <form className='form-contact' onSubmit={Form_Contact}> 
             <input className="name-contact" type="text" placeholder="Your Name" name='name' onChange={onUpdateField} required/> 
@@ -78,8 +77,7 @@ const  Form_Contact=(e)=>{
             <p>Egypt</p> 
             </div> 
           </div>  */}
-         </div> 
-            
+         </div>       
       </div>
   )
 }

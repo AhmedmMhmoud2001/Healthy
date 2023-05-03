@@ -29,21 +29,17 @@ const Article = () => {
     ) : (
             <div className='container'>
               <div className='M-div'>
-              <img className='M-img' src={"https://www.konsilmed.com/dashboardImages/specializations/1584282023ايقونات التخصصات لتطبيق كونزيل -15-31-11.png"} width="300px"alt=""/>
-                 <h1 className='M-title'>{data.title}</h1>
+              <h1 className='M-title'>{data.title}</h1>
+              <img className='M-img' src={data.img} width="300px"alt=""/>
               </div>  
             {data.paragraph.map((para)=>(
                         <div className='paragr-one'>
                            <div>
-                           <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282023ايقونات التخصصات لتطبيق كونزيل -15-31-11.png"} width="300px"alt=""/>
-                           </div>
-                           <div>
                                <h4 className='P-title'>{para.title}</h4>
-                               <p className='P-info'>ggggggggggg</p>
+                               <p className='P-info'>{para.summary}</p>
                            </div>
                        </div>
             ))}
-            <p className='auther'>auther</p>
             </div>
     )}
         </div>

@@ -22,7 +22,7 @@ const Articles = () => {
       
     return (
         <div>
-            <div className='Articles'>
+            <div className='Articles container'>
                 <div className='Articles-title'>
                     <h2>Articles</h2>
                 </div>
@@ -37,13 +37,13 @@ const Articles = () => {
                        <div className='Articles-info'>
                              <h2>{Article.title}</h2>
                              <p>
-                                {Article.sumary}
+                                {Article.summary}
                              </p>
                              <button>More</button>
                        </div>
                        <div className='Articles-img'>
                        <Link to={`/Articles/${Article._id}`}>
-                       <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282023ايقونات التخصصات لتطبيق كونزيل -15-31-11.png"}alt=""/>
+                       <img src={Article.img} alt=""/>
                        </Link>  
                        </div>
                    </div>

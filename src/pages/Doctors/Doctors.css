@@ -1,0 +1,31 @@
+.Doctors{margin-top: 150px;}
+.oneDoctor{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-around;
+   padding: 20px;
+   background: #fff;
+   margin-bottom: 20px;
+   border-radius: 10px;
+   border-radius: 1px solid #ada9a9;
+}
+.oneDoctor img {
+    width: 350px;
+    margin: 20px;
+}
+.doctorinfo{
+    max-width: 700px;
+}
+.oneDoctor span{
+   color: var(--mainColor);
+   font-size: 18px;
+   font-weight: 600;
+}
+.oneDoctor button {
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    background: var(--mainColor);
+    padding: 5px;
+}

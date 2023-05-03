@@ -3,7 +3,8 @@
     font-size: 40px;
     color: var(--mainColor) ;
     text-align: center;
-    margin: 50px;
+    margin-top: 150px;
+    
 }
 .Vision ,.Values  {
     display: flex;
@@ -13,8 +14,7 @@
     align-items: center;
     padding: 20px;
     background: #fff;
-    width: 80%;
-    margin: 10px auto;
+    margin:10px 0px;
 }
 .Mission  {
     display: flex;
@@ -24,18 +24,18 @@
     align-items: center;
     padding: 20px;
     background: #fff;
-    width: 80%;
-    margin:10px auto;
-    border-radius: 5px;
+    margin:10px 0px;
 }
 .Vision  img ,.Mission img ,.Values img{
-    width: 400px;
-    margin: 20px;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 10px;
     border-radius: 5px;
 }
 .Vision  div  ,.Mission div ,.Values div{
-    width: 400px;
-    margin: 20px;
+    min-width: 300px;
+    max-width: 450px;
+    margin: 10px;
 
 }
 .Vision  div  h2,.Mission div h2,.Values div h2{

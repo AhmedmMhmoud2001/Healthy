@@ -1,8 +1,12 @@
 /*=============================== start  Register ========================= */
+.Register{
+    margin-top: 150px;
+}
 .Register h2 {
     text-align: center;
     color: var(--mainColor);
     padding: 30px;
+    
 }
 
 .form_Register {
@@ -70,6 +74,14 @@
     font-size: 18px;
     border: none;
     border-radius: 5px;
+}
+.errors{
+    text-align: center;
+    color:brown;
+    background: #f703033d;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 
 /* Extra small devices (phones, 300px and down) */

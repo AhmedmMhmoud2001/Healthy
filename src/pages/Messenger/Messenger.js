@@ -3,7 +3,7 @@ import "./Messenger.css"
 const Messenger = () => {
     return (
         <div>
-            <div className='Messenger-page'>
+            <div className='Messenger-page container'>
                 <div className='Messenger-page-left-live-chat'>
                     <div className='live-chat'>
                         <div>

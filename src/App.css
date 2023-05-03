@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;500&family=Courgette&family=Merriweather:wght@300&display=swap');
 :root{
-    --mainColor:#480475;
+    --mainColor:#00d1bd;
     --black:black;
     --white:white;
     --box-shadow:rgb(185, 185, 185);
 
 }
 body{
-    background: rgb(245, 245, 245);
+    background: rgb(250, 250, 250) !important;
+}
+.container {
+    width: 90%;
+    margin: auto;
 }
 /* #008080 */

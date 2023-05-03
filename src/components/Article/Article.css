@@ -4,27 +4,22 @@
     margin: auto;
 }
 .M-div {
-    padding:50px;
     width: 100%;
     text-align: center;
 }
 .M-div img {
-    width: 400px;
+   width: 100%;
 }
 
 .M-div h1{
     font-size: 50px;
     font-weight: 700;
     color:var(--mainColor);
+    margin: 0px 0px 50px;
 }
 .paragr-one{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    padding: 10px;
-    margin: 10px auto;
-    background: #fff;
+    margin-top: 30px;
+}
+.paragr-one .P-title {
+    color: var(--mainColor);
 }

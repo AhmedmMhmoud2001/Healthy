@@ -1,0 +1,35 @@
+.Dashusers{
+    margin-top: 150px;
+}
+.adduser form {
+    max-width: 700px;
+    margin: auto;
+    padding: 10px;
+    background: #fff;
+    
+}
+.adduser form label {
+    width: 30%;
+    color: var(--mainColor);
+    font-size: 18px;
+}
+.adduser form .form__input {
+    width: 60%;
+    height: 40px;
+
+}
+.adduser form .adduserbtn {
+    border: none;
+    padding: 5px 20px;
+    background: var(--mainColor);
+    color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.edituser{
+    margin-top: 150px;
+}
+.edituser .imgUrl{
+    margin: 20px 0px;
+}

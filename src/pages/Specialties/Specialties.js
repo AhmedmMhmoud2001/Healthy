@@ -1,96 +1,58 @@
 import React from 'react';
+import {useState, useEffect} from "react"
+import { Link } from 'react-router-dom';
 import './Specialties.css'
 const Specialties = () => {
+      const [isLoading, setIsLoading] = useState(true);
+      const [data, setData] = useState([]);
+    useEffect(() => {
+        const url = `/specialties`;
+        fetch(url)
+          .then((response) => response.json())
+          // .then(console.log)
+          .then((json) => setData(json))
+          .catch((error) => console.log("error in api"));
+      }, []);
+
+       useEffect(() => {
+        if (data.length !== 0) {
+          setIsLoading(false);
+        }
+      }, [data]);
     return (
-        <div>
-           <div className='Specialties'>
+        <div className='container'>
             <div className='Specialties-title'>
                 <h2>Our Specialties</h2>
             </div>
-            <div className='Specialties-all-cards'>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282023ايقونات التخصصات لتطبيق كونزيل -15-31-11.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
+            {isLoading?(
+                <div>
+                    <h2> loading . . .</h2>
+                </div>
+            ):(
+                <div>
+                    <div className='Specialties-all-cards'>
+                    {
+                            data.map((Specialty)=>(
+                                
+                                <div className='Specialties-card' key={Specialty._id}>
+                                    <Link to={`/Specialties/${Specialty.title}`} >
+                            <div>
+                                <img src={Specialty.img} alt={Specialty.title}/>
+                            </div>
+                            <div>
+                                <p>   
+                                {Specialty.title}
+                                </p>
+                            </div>
+                            </Link>
+                            </div>
+                            ))
+                        }
+                    
                     </div>
                 </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282061ايقونات التخصصات لتطبيق كونزيل -15-31-03.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282128ايقونات التخصصات لتطبيق كونزيل -15-31-01.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282147ايقونات التخصصات لتطبيق كونزيل -15-31-12.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282186ايقونات التخصصات لتطبيق كونزيل -15-31-06.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1609685598ايقونات التخصصات لتطبيق كونزيل -15-31-33.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584811410ايقونات التخصصات لتطبيق كونزيل -15-31-19.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-                <div className='Specialties-card'>
-                    <div>
-                        <img src={"https://www.konsilmed.com/dashboardImages/specializations/1584282275ايقونات التخصصات لتطبيق كونزيل -15-31-17.png"} alt=""/>
-                    </div>
-                    <div>
-                        <p>   
-                            Internal Medicine and Gastroenterology
-                        </p>
-                    </div>
-                </div>
-            
-            </div>
-           </div>
+            )
+            }
         </div>
     );
 }

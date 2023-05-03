@@ -12,14 +12,10 @@
     font-weight: 700;
     font-family: Courgette, Merriweather, Akshar;
     color: var(--white);
-    text-align: center;
+    margin-top: 50px;
 }
 .footer .footer-body{
-    display: flex;
-    padding-bottom: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    padding-bottom: 50px;
     border-bottom: 1px solid var(--white);
 }
 
@@ -27,13 +23,9 @@
 .footer .Left .footerdisc p {
    padding-top: 20px;
    max-width: 300px;
-   text-align: center;
    line-height: 1.3;
 }
-.footer .center{
-    
-    text-align: center;
-}
+
 .footer .center div a {
     color: var(--white);
     text-decoration: none;
@@ -41,7 +33,6 @@
     font-size: 18px;
 }
 .footer .Right {
-    text-align: center;
     line-height: 1.3;
 }
 .footer .Right a {
@@ -49,7 +40,6 @@
     color: var(--white);
 }
 .footer .copyRights {
-    text-align: center;
     font-size: 18px;
     font-weight: 500;
     padding: 10px 0px 0px ;

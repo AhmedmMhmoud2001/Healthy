@@ -1,3 +1,89 @@
+
+
+
+
+
+
+.Carousel{
+    margin-top: 100px;
+    position: relative;
+}
+
+
+.Carousel_Caption{
+    max-width: 400px;
+    max-height: 250px;
+    background: #fff;
+    position: absolute;
+    box-shadow: 0px 2px 2px 5px #fff;
+    border-radius: 10px;
+    left: 75px;
+    top: 75px;
+    color: #000;
+    padding:50px;
+}
+
+@media only screen and (max-width: 800px) {
+ .Carousel_Caption{
+    display: none;
+ }
+}
+
+
+
+
+
+.Consultation-work{
+    margin-top: 80px;
+}
+.Consultation-work-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+ .Consultation-work-title h2{
+    color: var(--mainColor);
+ }
+ .Consultation-work-title p {
+    opacity: .5;
+ }
+
+
+ .Consultation-work h3{
+    color: var(--mainColor);
+    margin-top: 30px;
+ }
+ .Consultation-work p{
+    opacity: .5;
+ }
+
+ .Consultation-work .num{
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: 600;
+    opacity: .5;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .home-main {
     background: #480475;
     display: flex;
@@ -5,7 +91,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding:40px 0px;
+    padding:50px 0px;
 }
 .home-main-left{
     max-width: 600px;

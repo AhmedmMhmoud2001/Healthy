@@ -1,0 +1,74 @@
+.Prfile{
+    margin-top: 150px;
+    position: relative;
+    height: 80vh;
+}
+.Prfile h1{
+    text-align: center;
+    color: var(--mainColor);
+}
+.imgPrfile {
+    text-align: center;
+    width: 100%;
+    margin: 30px;
+}
+.imgPrfile img {
+    width: 300px;
+    text-align: center;
+    border-radius: 50%;
+}
+.infoPrfile{
+    display: flex;
+    align-items: center;
+}
+.namePrfile , .emailPrfile , .phonePrfile{
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--mainColor);
+    width: 80px;
+}
+.editProfile button{
+     border: none;
+     border-radius: 5px;
+     background: var(--mainColor);
+     color: #fff;
+     padding: 5px 10px;
+}
+.editProfileModel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    margin: auto;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #bbb7b7;
+    display: none;
+    padding: 20px 40px;
+}
+.closeEditProfile {
+    text-align: right;
+}
+.closeEditProfile  button {
+    border: none;
+    background: none;
+    font-size: 40px;
+    font-weight: 500;
+}
+.editProfileModel form div {
+    margin: 10px 0px;
+}
+.editProfileModel form label {
+    width: 130px;
+}
+.editProfileModel form input {
+    width: 250px;   
+}
+.Edit-Profile-form {
+    background: var(--mainColor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}

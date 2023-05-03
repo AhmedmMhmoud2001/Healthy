@@ -1,6 +1,5 @@
 .Articles {
-    width: 85%;
-    margin: 80px auto;
+    margin-top: 150px;
 
 }
 
@@ -45,5 +44,5 @@
     text-align: center;
 }
 .Articles-img img {
-    width: 200px;
+    width: 500px;
 }

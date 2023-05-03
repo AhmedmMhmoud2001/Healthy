@@ -1,6 +1,6 @@
 .cart{
+  margin-top: 150px;
   display: flex;
-  margin: 30px auto;
   height: max-content;
   padding: 20px 20px 0 20px;
   gap: 20px;

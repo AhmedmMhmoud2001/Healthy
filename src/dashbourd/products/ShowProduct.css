@@ -1,0 +1,47 @@
+.Showallproducts{
+    margin-top: 150px;
+}
+
+
+.addProduct form {
+    max-width: 700px;
+    margin: auto;
+    background: #fff;
+    border: 1px solid #afacac;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+
+}
+.addProduct form label {
+    font-size: 18px;
+    color: var(--mainColor);
+    width: 100px;
+    margin: 10px;
+}
+.addProduct form input ,.addProduct form select {
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+}
+.addProductbtn {
+    width: 200px !important;
+    background: var(--mainColor);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.faFilePen{
+    text-align: center;
+    color:var(--mainColor) !important;
+}
+.faTrash {
+    text-align: center;
+    color:#f00 !important;
+}
+
+.product-img-dashbourd{
+    width: 100px;
+    height: 100px;
+
+}
